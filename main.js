@@ -70,8 +70,8 @@ function createScene() {
 
     /* ---------- Jump machanics ---------- */
     let jumpVelocity = 0;
-    const JUMP_FORCE = 0.45;
-    const GRAVITY = -0.01;
+    const JUMP_FORCE = 0.05;
+    const GRAVITY = -0.002;
 
     window.addEventListener("keydown", e => {
     console.log(isGrounded);
