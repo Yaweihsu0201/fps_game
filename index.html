@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Babylon.js Shooter (Minimal)</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="renderCanvas"></canvas>
+
+  <div id="hud">
+    <div id="crosshair"></div>
+
+    <div id="info">
+      <div><b>Babylon.js Shooter</b></div>
+      <div>WASD：移動｜滑鼠：轉向｜左鍵：射擊</div>
+      <div>
+        Enemies：<span id="enemyCount">0</span>｜
+        Score：<span id="score">0</span>
+      </div>
+    </div>
+
+    <div id="hpbar">
+      <div id="hpfill"></div>
+    </div>
+
+    <div id="hint">點一下畫面鎖定滑鼠（Pointer Lock）</div>
+  </div>
+
+  <!-- Babylon.js -->
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+
+  <!-- Game Logic -->
+  <script src="main.js"></script>
+</body>
+</html>
